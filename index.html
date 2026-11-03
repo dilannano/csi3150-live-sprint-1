@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Reveal — What's that Animal?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="ui">
+      <header class="banner">
+        <h1 class="banner__title">
+          Welcome to the Interactive Reveal What's that Animal UI
+        </h1>
+      </header>
+
+      <section class="banner">
+        <p class="banner__subtitle">
+          Click on the buttons below to reveal the animal images
+        </p>
+      </section>
+
+      <section class="animals">
+        <div class="animal">
+          <div class="animal__result" id="cat-result" hidden>
+            <img class="animal__img" src="tabby-cat.jpg" alt="A cat" />
+            <button type="button" class="btn btn--hide" data-animal="cat">
+              Hide Result
+            </button>
+          </div>
+          <button type="button" class="btn btn--reveal" data-animal="cat">
+            Reveal a CAT
+          </button>
+        </div>
+
+        <div class="animal">
+          <div class="animal__result" id="dog-result" hidden>
+            <img class="animal__img" src="dog.jpg" alt="A dog" />
+            <button type="button" class="btn btn--hide" data-animal="dog">
+              Hide Result
+            </button>
+          </div>
+          <button type="button" class="btn btn--reveal" data-animal="dog">
+            Reveal a DOG
+          </button>
+        </div>
+
+        <div class="animal">
+          <div class="animal__result" id="cow-result" hidden>
+            <img class="animal__img" src="cow.jpg" alt="A cow" />
+            <button type="button" class="btn btn--hide" data-animal="cow">
+              Hide Result
+            </button>
+          </div>
+          <button type="button" class="btn btn--reveal" data-animal="cow">
+            Reveal a COW
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
